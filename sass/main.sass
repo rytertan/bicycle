@@ -77,27 +77,6 @@ body
 		justify-content: center
 		align-content: center
 
-article
-	display: grid
-	grid-auto-rows: minmax(min-content, max-content);
-	justify-items: center
-	padding: 20px 10px
-	align-content: start
-	background-color: #fff
-	p
-		font-size: 16px
-		font-weight: 400
-		line-height: 28px
-		color: $text
-		padding: 20px
-		&::after
-			content: ''
-			display: block
-			width: 50px
-			height: 1px
-			margin: 20px auto
-			background-color: lighten($text,30%)
-
 .tiangle
 	content: ''
 	display: grid
@@ -160,6 +139,27 @@ article
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center center
+
+article
+	display: grid
+	grid-auto-rows: minmax(min-content, max-content);
+	justify-items: center
+	padding: 20px 10px
+	align-content: start
+	background-color: #fff
+	p
+		font-size: 16px
+		font-weight: 400
+		line-height: 28px
+		color: $text
+		padding: 20px
+		&::after
+			content: ''
+			display: block
+			width: 50px
+			height: 1px
+			margin: 20px auto
+			background-color: lighten($text,30%)
 
 .feedback
 	justify-content: center
