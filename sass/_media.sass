@@ -7,7 +7,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width :1280px)
-
 	.title
 		font-size: 16px
 	.nav-bar
@@ -38,11 +37,22 @@
 		grid-column: 1/5
 	.brand-item1, .brand-item4, .brand-item5, .brand-item7
 		min-height: 50vh
-
-	article
-		padding: 15px
 		p
 			font-size: 14px
+	.feedback
+		padding: 30px 20px
+		h1
+			font-size: 16px
+		p
+			font-size: 20px
+			line-height: 30px
+
+	.shop
+		.shop-item
+			grid-template-columns: 1fr
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7
+	min-height: 60vh
 
 /* Small Devices, Tablets */
 @media only screen and (max-width :768px)
@@ -64,16 +74,86 @@
 		grid-template-columns: 1fr
 	.brand-item1, .brand-item2, .brand-item3, .brand-item4, .brand-item5, .brand-item6, .brand-item7
 		grid-column: 1/2
+	.feedback
+		h1
+			font-size: 14px
+		p
+			font-size: 18px
+			line-height: 28px
+
+	.item1, .item2, .item3, .item4, .item5, .item6, .item7
+		min-height: 40vh
+
+	.contact
+		padding: 50px 0
+		p
+			font-size: 20px
+			line-height: 28px
+
+	form
+		input
+			padding: 10px 40px 10px 10px
+			font-size: 16px
+			line-height: 24px
+			width: 250px
+		button
+			height: 45px
+			width: 60px
+			font-size: 16px
+			line-height: 24px
+
+	.footer
+		padding: 50px 20px
+
+	.first-footer-column
+		color: $text
+		h3
+			font-size: 14px
+			line-height: 24px
+	p
+		font-size: 14px
+		line-height: 20px
+
+	.second-footer-column
+		column-gap: 10px
+
+.third-footer-column
+	column-gap: 10px
+	p
+		font-size: 12px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width :492px)
 	.nav-bar
-		width: 100%
+		width: 85%
+		padding: 30px 20px
 		a
 			font-size: 10px
 		img
 			width: 15%
 			height: 15%
+	.feedback
+		h1
+			font-size: 16px
+			line-height: 28px
+
+	.first-shop-section, .second-shop-section
+		grid-template-columns: 1fr
+
+	.item3
+		grid-column: 1/2
+
+	form
+		input
+			width: 200px
+
+	.footer
+		grid-template-columns: 1fr
+		justify-content: center
+		row-gap: 40px
+
+	.first-footer-column
+		text-align: center
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width :320px)
